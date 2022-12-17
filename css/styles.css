@@ -1,10 +1,21 @@
 :root {
-    --title-color: #2E2F42
+    --navy-blue-color: #2E2F42;
+    
+    --white-color: #FFFFFF;
+
+    --iris-color: #4D5AE5;
+
+    --slate-color: #434455;
+
+    --corni-flower-color: #E7E9FC; 
+
+    --cloud-color: #F4F4FD;
+
+    --active-button-color: #404BBF;
 }
-
-
 body {
     font-family: 'Roboto', sans-serif;
+    background-color: var(--white-color);
 }
 
 .list {
@@ -19,13 +30,13 @@ font-size: 18px;
 line-height: 1.33;
 letter-spacing: 0.03em;
 text-transform: uppercase;
-color: #4D5AE5;
+color: var(--iris-color);
 text-decoration: none;
 }
 
 .studio {
     font-family: 'Raleway', sans-serif;
-    color: #2E2F42;
+    color: var(--navy-blue-color);
 }
 
 .navigation-link {
@@ -34,17 +45,17 @@ text-decoration: none;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: #2E2F42;
+    color: var(--navy-blue-color);
     text-decoration: none;
 }
 
 .navigation-link:hover,
 .navigation-link:focus {
-    color: #434455;
+    color: var(--slate-color);
 }
 
 .navigation-link:active {
-    color: #4D5AE5
+    color: var(--iris-color);
 }
  
 .header-link {
@@ -52,13 +63,18 @@ text-decoration: none;
    font-size: 16px;
    line-height: 1.5;
    letter-spacing: 0.02em;
-   color: #434455;
+   color: var(--slate-color);
    text-decoration: none;
+}
+
+.header-link:hover,
+.header-link:focus {
+    color: var(--iris-color);
 }
 
 /* ------------HERO------------- */
 .section-hero {
-    background-color: #2E2F42;
+    background-color: var(--navy-blue-color);
 }
 
 .title-hero {
@@ -68,7 +84,7 @@ text-decoration: none;
     line-height: 1.07;
     text-align: center;
     letter-spacing: 0.02em;
-    color: #FFFFFF;
+    color: var(--white-color);
 ;}
 
 .hero-button {
@@ -80,10 +96,21 @@ line-height: 1.18;
 display: flex;
 align-items: center;
 letter-spacing: 0.04em;
-color: #FFFFFF;
 cursor: pointer; 
-background-color: #4D5AE5;
+background-color: var(--iris-color);
+color: var(--white-color);
 }
+
+.hero-button:hover,
+.hero-button:focus {
+background-color: var(--iris-color);
+color: var(--white-color);
+}
+
+.hero-button:active {
+    background-color: var(--active-button-color);
+    color: var(--white-color);
+    }
 
 /* ------------FEATURES------------- */
 
@@ -106,14 +133,14 @@ background-color: #4D5AE5;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    color: var(--title-color)
+    color: var(--navy-blue-color);
 }
 
 .features-text {
 font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
-color: #434455;
+color: var(--slate-color);
 }
 
 /* ------------WORK------------- */
@@ -126,10 +153,14 @@ line-height: 1.11;
 text-align: center;
 letter-spacing: 0.02em;
 text-transform: capitalize;
-color: var(--title-color)
+color: var(--navy-blue-color);
 }
 
 /* ------------TEAM------------- */
+
+.team-section {
+    background-color: var(--cloud-color);
+}
 
 .team-title {
 font-style: normal;
@@ -138,7 +169,11 @@ font-size: 20px;
 line-height: 1.2;
 text-align: center;
 letter-spacing: 0.02em;
-color: var(--title-color)
+color: var(--navy-blue-color);
+}
+
+.team-list {
+    background-color: var(--white-color);
 }
 
 .team-text {
@@ -146,10 +181,10 @@ font-size: 16px;
 line-height: 1.5;
 text-align: center;
 letter-spacing: 0.02em;
-color: #434455;
+color: var(--slate-color);
 }
 
-/* ------------FILTER------------- */
+/* ------------PROJECTS------------- */
 
 .filter-button {
     font-family: inherit;
@@ -161,20 +196,20 @@ color: #434455;
     align-items: center;
     text-align: center;
     letter-spacing: 0.04em;
-    color: #4D5AE5;
-    background-color: #E7E9FC;
+    color: var(--iris-color);
+    background-color: var(--corni-flower-color);
     cursor: pointer; 
 }
 
 .filter-button:hover,
 .filter-button:focus {
-background-color: #4D5AE5;
-color: #FFFFFF;
+background-color: var(--iris-color);
+color: var(--white-color);
 }
 
 .filter-button:active {
-    background-color: #404BBF;
-    color: #FFFFFF;
+    background-color: var(--active-button-color);
+    color: var(--white-color);
     }
 
     /* ------------PROJECTS------------- */
@@ -185,26 +220,26 @@ color: #FFFFFF;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    color: var(--title-color)
+    color: var(--navy-blue-color);
 }
 
 .projects-text {
 font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
-color: #434455;
+color: var(--slate-color);
 }
 
 /* ------------FOOTER------------- */
 
 .section-footer {
-    background-color: #2E2F42;
+    background-color: var(--navy-blue-color);
 }
  .footer-text {
 font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
-color: #E7E9FC;
+color: var(--corni-flower-color);
  }
  
  .footer-logo {
@@ -215,12 +250,12 @@ font-size: 18px;
 line-height: 1.33;
 letter-spacing: 0.03em;
 text-transform: uppercase;
-color: #4D5AE5;
+color: var(--iris-color);
 text-decoration: none;
  }
 
  .studio-footer {
     font-family: 'Raleway', sans-serif;
-    color: #F4F4FD;
+    color: var(--cloud-color);
  }
 
